@@ -13,3 +13,11 @@ management:
   observations:
     annotations:
       enabled: true       # Enable @Observed (if you use observation annotations in code)
+
+otel:                     # Only send traces, not metrics or logs to langfuse
+  traces:
+    exporter: otlp
+  metrics:
+    exporter: none
+  logs:
+    exporter: none
