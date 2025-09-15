@@ -13,3 +13,10 @@ management:
   observations:
     annotations:
       enabled: true       # Enable @Observed (if you use observation annotations in code)
+otel:
+  traces:
+    exporter: otlp
+  logs:
+    exporter: none
+  metrics:
+    exporter: none
